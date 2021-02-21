@@ -8,10 +8,10 @@ galaxy_info:
   min_ansible_version: "{{ cookiecutter.min_ansible_version }}"
   platforms: 
   {%- for name, versions in cookiecutter.platforms|dictsort %}
-  - name: {{ name }}
-    versions: 
+    - name: {{ name }}
+      versions: 
   {%- for version in versions %}
-      - {{ version }}
+        - {{ version }}
   {%- endfor %}
   {%- endfor %}
   galaxy_tags: []
