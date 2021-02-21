@@ -8,7 +8,7 @@ name: Release
 
 defaults:
   run:
-    working-directory: {{ cookiecutter.git_user }}.{{ cookiecutter.role_name }}
+    working-directory: '{{cookiecutter.git_user}}.{{cookiecutter.role_name}}'
 
 jobs:
   release:
@@ -18,7 +18,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          path: {{ cookiecutter.git_user }}.{{ cookiecutter.role_name }}
+          path: '{{cookiecutter.git_user}}.{{cookiecutter.role_name}}'
 
       - name: Create Release
         uses: actions/create-release@v1

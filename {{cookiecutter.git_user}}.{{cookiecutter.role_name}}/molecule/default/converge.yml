@@ -9,5 +9,5 @@
   tasks:
     - name: Include bind
       include_role:
-        name: {{ cookiecutter.git_user }}.{{ cookiecutter.role_name }}
+        name: '{{cookiecutter.git_user}}.{{cookiecutter.role_name}}'
 ...

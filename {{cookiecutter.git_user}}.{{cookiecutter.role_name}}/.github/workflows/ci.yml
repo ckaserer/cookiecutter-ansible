@@ -12,7 +12,7 @@ name: CI
 
 defaults:
   run:
-    working-directory: {{ cookiecutter.git_user }}.{{ cookiecutter.role_name }}
+    working-directory: '{{cookiecutter.git_user}}.{{cookiecutter.role_name}}'
 
 jobs:
   linter:
@@ -22,7 +22,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
         with:
-          path: {{ cookiecutter.git_user }}.{{ cookiecutter.role_name }}
+          path: '{{cookiecutter.git_user}}.{{cookiecutter.role_name}}'
 
       - name: Lint Code Base
         uses: github/super-linter@v3
@@ -45,7 +45,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
         with:
-          path: {{ cookiecutter.git_user }}.{{ cookiecutter.role_name }}
+          path: '{{cookiecutter.git_user}}.{{cookiecutter.role_name}}'
 
       - name: Set up Python 3
         uses: actions/setup-python@v2

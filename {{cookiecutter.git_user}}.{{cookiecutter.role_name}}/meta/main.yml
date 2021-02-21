@@ -7,14 +7,13 @@ galaxy_info:
   license: "{{ cookiecutter.license }}"
   min_ansible_version: "{{ cookiecutter.min_ansible_version }}"
   platforms: 
-  {% for name, versions in cookiecutter.platforms|dictsort -%}
+  {%- for name, versions in cookiecutter.platforms|dictsort %}
   - name: {{ name }}
     versions: 
   {%- for version in versions %}
       - {{ version }}
-  {% endfor -%}
-  {% endfor -%}
-
+  {%- endfor %}
+  {%- endfor %}
   galaxy_tags: []
 
 dependencies: []
