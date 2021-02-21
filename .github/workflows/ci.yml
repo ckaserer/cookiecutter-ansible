@@ -49,7 +49,7 @@ jobs:
     runs-on: ubuntu-latest
     needs:
       - linter
-      - molecule
+      - cookiecutter
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
