@@ -2,7 +2,7 @@
     "git_user": "ckaserer",
     "role_name": "hello",
     "author": "Clemens Kaserer",
-    "description": "your description",
+    "description": "Ansible role to do ...",
     "platforms": {
          "Ubuntu": [
              "focal"
