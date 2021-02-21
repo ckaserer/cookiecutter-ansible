@@ -1,0 +1,17 @@
+{
+    "git_user": "ckaserer",
+    "role_name": "hello",
+    "author": "Clemens Kaserer",
+    "description": "your description",
+    "platforms": {
+         "Ubuntu": [
+             "focal"
+         ],
+         "Debian": [
+             "buster"
+         ]
+    },
+    "company": "",
+    "license": "MIT",
+    "min_ansible_version": "2.10"
+}

@@ -1,0 +1,3 @@
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/{{ cookiecutter.git_user }}/ansible-role-{{ cookiecutter.role_name }}/CI?style=flat-square)](https://github.com/{{ cookiecutter.git_user }}/ansible-role-{{ cookiecutter.role_name }}/actions?query=workflow%3ACI) ![mit](https://img.shields.io/badge/license-{{ cookiecutter.license }}-%20brightgreen.svg?style=flat-square) ![Maintenance](https://img.shields.io/maintenance/yes/2021?style=flat-square)
+
+# {{ cookiecutter.git_user }}.{{ cookiecutter.role_name }} 

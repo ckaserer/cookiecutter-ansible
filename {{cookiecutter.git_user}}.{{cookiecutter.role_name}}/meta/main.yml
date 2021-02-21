@@ -1,0 +1,21 @@
+---
+galaxy_info:
+  author: "{{ cookiecutter.author }}"
+  role_name: "{{ cookiecutter.role_name }}"
+  description: "{{ cookiecutter.description }}"
+  company: "{{ cookiecutter.company }}"
+  license: "{{ cookiecutter.license }}"
+  min_ansible_version: "{{ cookiecutter.min_ansible_version }}"
+  platforms: 
+  {% for name, versions in cookiecutter.platforms|dictsort -%}
+  - name: {{ name }}
+    versions: 
+  {%- for version in versions %}
+      - {{ version }}
+  {% endfor -%}
+  {% endfor -%}
+
+  galaxy_tags: []
+
+dependencies: []
+...
