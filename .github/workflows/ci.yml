@@ -44,6 +44,12 @@ jobs:
       - name: Run Cookiecutter tests
         run: cookiecutter . --no-input -f
 
+      - name: Run Molecule test
+        run: |
+          cd ckaserer.hello
+          pip3 install -r requirements.txt
+          molecule test
+
   merge:
     name: Merge to main
     runs-on: ubuntu-latest
